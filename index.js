@@ -26,7 +26,7 @@ io.on('connection', function(socket) {
             name
         });
         io.emit('update', {
-            users: userService.gettAllUsers()
+            users: userService.getAllUsers()
         });
     });
     socket.on('disconnect', () => {
