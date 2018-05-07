@@ -22,7 +22,7 @@ const MessageList = (props) => {
 };
 
 MessageList.propTypes = {
-    messages: PropTypes.string
+    messages: PropTypes.array
 };
 
 Message.propTypes = {

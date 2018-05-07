@@ -13,6 +13,7 @@ class App extends React.Component {
         super(props);
         this.state = {users: [], messages: [], text: '', name: ''};
     }
+    
     componentDidMount() {
         socket.on('message', message => this.messageReceive(message));
         socket.on('update', ({users}) => this.chatUpdate(users));
@@ -24,7 +25,7 @@ class App extends React.Component {
     }
     
     chatUpdate(users) {
-        this.setState({users});
+    this.setState({users});
     }
     
     handleMessageSubmit(message) {
