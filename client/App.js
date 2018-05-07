@@ -25,7 +25,7 @@ class App extends React.Component {
     }
     
     chatUpdate(users) {
-    this.setState({users});
+        this.setState({users});
     }
     
     handleMessageSubmit(message) {
