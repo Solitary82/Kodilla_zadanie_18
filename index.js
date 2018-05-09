@@ -31,7 +31,7 @@ io.on('connection', function(socket) {
     });
     socket.on('disconnect', () => {
         userService.removeUser(socket.id);
-        socket.$broadcast.emit('update', {
+        socket.broadcast.emit('update', {
             users: userService.getAllUsers()
         });
     });
@@ -45,5 +45,3 @@ io.on('connection', function(socket) {
 });
 
 server.listen(3000);
-
-
