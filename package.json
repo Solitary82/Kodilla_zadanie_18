@@ -30,7 +30,8 @@
   },
   "scripts": {
     "build": "set NODE_ENV=production&webpack",
-    "start": "webpack-dev-server --inline --hot --config ./webpack.config.js",
+    "start-dev": "webpack-dev-server --inline --hot --config ./webpack.config.js",
+    "start": "node index.js",
     "fixindex": "eslint --fix index.js",
     "fixclient": "eslint --fix client",
     "test": "npm-run-all test:*",
